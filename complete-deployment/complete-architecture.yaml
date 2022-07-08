@@ -26,9 +26,9 @@ data:
   config.tpl: |
     {{ key "demo-app/envs" }}
     {{ with secret "secret/apps/example" }}
-    Organization={{ .Data.data.organization }}
-    ID={{ .Data.data.customer_id }}
-    Contact={{ .Data.data.contact_email }}
+    Organization={{ .Data.organization }}
+    ID={{ .Data.customer_id }}
+    Contact={{ .Data.contact_email }}
     {{ end }}
 
 ---
